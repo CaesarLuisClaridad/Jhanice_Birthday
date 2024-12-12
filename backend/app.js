@@ -43,7 +43,7 @@ if (process.env.NODE_ENV === "PRODUCTION") {
 // for error middleware
 app.use(ErrorMiddleware);
 
-app.listen(process.env.PORT, () => {
+const server = app.listen(process.env.PORT, () => {
     console.log(`listening on port ${process.env.PORT} and in ${process.env.NODE_ENV}`);
 })
 
