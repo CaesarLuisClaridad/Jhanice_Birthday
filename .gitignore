@@ -55,7 +55,7 @@ jspm_packages/
 .vite
 
 # Exclude compiled frontend files (optional)
-frontend/dist/
+
 
 # Others
 .npmrc
