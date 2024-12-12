@@ -9,6 +9,7 @@ import { connectDataBase } from './config/dbConnect.js';
 import ErrorMiddleware from './middleware/error.js'
 import path from "path";
 import { fileURLToPath } from 'url';
+import cors from 'cors';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -32,6 +33,10 @@ connectDataBase()
 
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
+app.use(cors({
+    origin: "*", 
+}));
+
 
 //routes
 app.use("/api/v1", greetingsRoutes);
