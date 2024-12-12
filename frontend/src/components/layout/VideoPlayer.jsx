@@ -115,7 +115,7 @@ const VideoPlayer = () => {
       {video && !loading && (
         <video
           ref={videoRef}
-          src={video.url}
+          src={video.secure_url}
           onTimeUpdate={handleProgressUpdate}
           onLoadedMetadata={() => {
             setDuration(videoRef.current.duration);
