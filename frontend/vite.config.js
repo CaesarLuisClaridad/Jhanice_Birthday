@@ -9,7 +9,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api' : {
-        target: 'http://localhost:3000', //proxy to connect to backend
+        target: 'https://jhanice-birthday-1.onrender.com', //proxy to connect to backend
         changeOrigin: true,
       }
     }
