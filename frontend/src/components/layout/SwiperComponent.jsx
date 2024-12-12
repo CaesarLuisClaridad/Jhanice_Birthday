@@ -18,6 +18,7 @@ const SwiperComponent = () => {
           throw new Error('Network response was not ok');
         }
         const data = await response.json();
+        console.log(data)
         setImages(data.images || []);
       } catch (error) {
         console.error('Error fetching images:', error);
@@ -63,7 +64,7 @@ const SwiperComponent = () => {
         {/*--getting and mapping the images--*/}
         {images.map((image, index) => (
            <SwiperSlide key={index}>
-           <img src={image.url} alt="jhanice-picture" />
+           <img src={image.secure_url} alt="jhanice-picture" />
          </SwiperSlide>
         ))}
       </Swiper>

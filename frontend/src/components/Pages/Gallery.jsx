@@ -54,7 +54,7 @@ const Gallery = () => {
           <div className="row px-lg-5 px-md-4 px-3 py-3 overflow-hidden">
             {images.map((image, index) => (
               <div className="col-sm-2 col-md-3 col-lg-2 col-6 py-lg-3 py-2 mb-lg-3 mb-2 gallery-img overflow-hidden" key={index}>
-                <img src={image.url} alt={image.public_id} />
+                <img src={image.secure_url} alt={image.public_id} />
               </div>
             ))}
           </div>
