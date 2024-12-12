@@ -23,6 +23,10 @@ if(process.env.NODE_ENV !== 'PRODUCTION') {
     dotenv.config({path: "backend/config/config.env"})
 }
 
+console.log("Current working directory:", __dirname);
+console.log("Frontend dist path:", path.join(__dirname, "../frontend/dist"));
+console.log('Frontend dist path:', path.join(__dirname, "../frontend/dist"));
+
 //connecting to database
 connectDataBase()
 
