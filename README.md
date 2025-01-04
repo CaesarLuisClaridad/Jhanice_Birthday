@@ -1,4 +1,4 @@
-# Netflix Clone
+# Netflix Clone/Birthday Greeting
 
 A responsive, full-stack Netflix-inspired website built using the MERN stack (MongoDB, Express, React, and Node.js) 
 with additional tools and libraries like Bootstrap, Cloudinary, and SwiperJS for advanced features and functionality.
